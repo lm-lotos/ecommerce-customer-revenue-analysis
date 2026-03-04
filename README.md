@@ -4,8 +4,6 @@
 
 Основна мета аналізу — визначити, які сегменти клієнтів генерують найбільший дохід, та сформулювати рекомендації для маркетингової стратегії компанії.
 
----
-
 ## Dashboard Preview
 
 ### Revenue Overview
@@ -13,8 +11,6 @@
 
 ### Customer Segment Analysis
 ![Customer Segment Analysis](screenshots/customer_segment_analysis.png)
-
----
 
 ## Бізнес-завдання
 
@@ -25,8 +21,6 @@
 - Яка група клієнтів частіше купує товари зі знижками?
 - Який сегмент клієнтів є найбільш вигідним для бізнесу в довгостроковій перспективі?
 
----
-
 ## Використані інструменти
 
 У проєкті використовувалися такі інструменти:
@@ -36,8 +30,6 @@
 - Python
 - Excel (для попередньої обробки даних)
 - GitHub (для організації та презентації проєкту)
-
----
 
 ## SQL-аналіз
 
@@ -55,17 +47,11 @@ SQL-запити включають:
 
 Файл із SQL-запитами:
 
-
 queries.sql
-
 
 Результати виконання SQL-запитів збережені у папці:
 
-
 SQLqueries.sql
-
-
----
 
 ## Візуалізація даних
 
@@ -79,13 +65,7 @@ SQLqueries.sql
 - Аналіз витрат клієнтів за категоріями товарів
 - Порівняння доходу між чоловіками та жінками
 
-Посилання на Tableau Public:
-
-
-tableau_public_link.txt
-
-
----
+Посилання на Tableau Public: tableau_public_link.txt
 
 ## Основні метрики аналізу
 
@@ -96,8 +76,6 @@ tableau_public_link.txt
 - Discount Usage Rate
 - Revenue by Age Group
 - Gender × Age comparison
-
----
 
 ## Основні інсайти
 
@@ -110,15 +88,11 @@ tableau_public_link.txt
 - Категорія клієнтів **"Other"** присутня у даних, але була виключена з основного аналізу через дуже малу частку користувачів.
 - Порівняння Net Amount та Gross Amount показало, що різниця між групами клієнтів є незначною і не впливає суттєво на загальні висновки аналізу.
 
----
-
 ## Бізнес-висновок
 
 Стать клієнта не є визначальним фактором прибутковості.
 
 Найбільш прибутковим сегментом для компанії є клієнти віком **25–45 років**, які стабільно генерують найбільший дохід.
-
----
 
 ## Рекомендації для бізнесу
 
@@ -126,41 +100,33 @@ tableau_public_link.txt
 
 Основний фокус маркетингових кампаній варто спрямувати на клієнтів віком **25–45 років**, оскільки саме цей сегмент формує найбільшу частку доходу компанії.
 
----
-
 ## Структура репозиторію
 
-
-ecommerce-customer-revenue-analysis
+```
+ecommerce-customer-revenue-analysis/
 │
-├── screenshots
-│ ├── dashboard_overview.png
-│ └── customer_segment_analysis.png
+├── screenshots/
+│   ├── dashboard_overview.png
+│   └── customer_segment_analysis.png
 │
-├── SQLqueries.sql
-│ ├── 1.pdf
-│ ├── 2.pdf
-│ ├── 3.pdf
-│ ├── 4.pdf
-│ └── 5.pdf
-│
-├── sql_task_1_users_brasil_2023.csv.csv
-├── sql_task_2_categories_count.csv.csv
-├── sql_task_3_shipped_orders.csv.csv
-├── sql_task_4_top10_orders.csv.csv
-├── sql_task_5_users_by_country.csv.csv
+├── SQLqueries.sql/
+│   ├── 1.pdf
+│   ├── 2.pdf
+│   ├── 3.pdf
+│   ├── 4.pdf
+│   ├── 5.pdf
+│   ├── sql_task_1_users_brasil_2023.csv
+│   ├── sql_task_2_categories_count.csv
+│   ├── sql_task_3_shipped_orders.csv
+│   ├── sql_task_4_top10_orders.csv
+│   └── sql_task_5_users_by_country.csv
 │
 ├── queries.sql
 ├── project1_df.csv
 ├── age_regression.py
 ├── tableau_public_link.txt
 └── README.md
-
-
----
-
-## Автор
-
-**Лариса Марущак**
+```
+## Автор: студентка курсу DTA, спеціальності Лариса Марущак
 
 Навчальний аналітичний проєкт з аналізу клієнтської поведінки та сегментації користувачі

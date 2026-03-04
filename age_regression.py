@@ -5,8 +5,8 @@ import pandas as pd
 try:
     import statsmodels.api as sm
 except ImportError:
-    print("❌ Не знайдено бібліотеку statsmodels.")
-    print("✅ Встанови так: pip install statsmodels")
+    print(" Не знайдено бібліотеку statsmodels.")
+    print("Встанови так: pip install statsmodels")
     sys.exit(1)
 
 
@@ -17,7 +17,7 @@ print("="*60)
 CSV_PATH = "project1_df.csv"  # якщо файл в іншій папці — вкажи шлях
 
 df = pd.read_csv(CSV_PATH)
-print("✅ Файл завантажено.")
+print(" Файл завантажено.")
 print("Розмір:", df.shape)
 print("Перші 3 рядки:")
 print(df.head(3))
@@ -26,8 +26,8 @@ print(df.head(3))
 required_cols = ["Age Group", "Gross Amount"]
 missing = [c for c in required_cols if c not in df.columns]
 if missing:
-    print("\n❌ Немає потрібних колонок:", missing)
-    print("✅ Є такі колонки:", list(df.columns))
+    print("\n Немає потрібних колонок:", missing)
+    print(" Є такі колонки:", list(df.columns))
     sys.exit(1)
 
 
@@ -49,14 +49,14 @@ df["Age"] = df["Age Group"].map(age_map)
 # Подивимось, чи всі групи замапились
 unmapped = df.loc[df["Age"].isna(), "Age Group"].dropna().unique()
 if len(unmapped) > 0:
-    print("⚠️ Увага: є вікові групи, яких нема в age_map:", unmapped)
-    print("✅ Додай їх у age_map (якщо це просто інші назви).")
+    print("Увага: є вікові групи, яких нема в age_map:", unmapped)
+    print( Додай їх у age_map (якщо це просто інші назви).")
 
 data = df[["Age", "Gross Amount"]].dropna()
 
-print("✅ Після очищення (без пропусків) рядків:", len(data))
+print(" Після очищення (без пропусків) рядків:", len(data))
 if len(data) < 30:
-    print("⚠️ Дуже мало даних для регресії — результат може бути нестабільний.")
+    print(" Дуже мало даних для регресії — результат може бути нестабільний.")
 
 
 print("\n" + "="*60)
