@@ -127,6 +127,12 @@ ecommerce-customer-revenue-analysis/
 ├── tableau_public_link.txt
 └── README.md
 ```
-## Автор: студентка курсу DTA, спеціальності Датааналітики та Інженерії - 2026,  Лариса Марущак
+## Автор
+
+Лариса Марущак  
+Студентка програми **Data Analytics & Engineering**  
+DTA – Deutsche Tech Akademie  
+Група: **25-GR-01**  
+Lex Labs UG (VAT DE 356810365)
 
 Навчальний аналітичний проєкт з аналізу клієнтської поведінки та сегментації користувачі
