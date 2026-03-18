@@ -1,4 +1,136 @@
+Built using the BigQuery public dataset: "thelook_ecommerce"
+
 # E-commerce Customer Revenue Analysis
+
+## 🇬🇧 Project Overview
+
+End-to-end analysis of an e-commerce dataset using Python, SQL, Tableau and BigQuery.
+
+## 🛠 Tools
+Python, SQL, Tableau, BigQuery
+
+## 📌 Business Questions
+
+The analysis focuses on answering the following business questions:
+
+- Which customer group (male or female) generates higher total revenue?
+- Which group has a higher average order value (AOV)?
+- Which group uses discounts more frequently?
+- Which customer segment is the most profitable in the long term?
+
+---
+
+## 🧠 SQL Analysis
+
+The analysis is based on 5 SQL queries executed on the public dataset:
+
+`bigquery-public-data.thelook_ecommerce`
+
+The queries include:
+- Filtering users from Brazil registered in 2023
+- Product category distribution analysis
+- Joining orders and users tables (JOIN)
+- Top 10 highest-value orders
+- User distribution by country
+
+---
+
+## 📊 Data Visualization
+
+An interactive Tableau dashboard was created to visualize key insights.
+
+Main dashboard components:
+- Monthly revenue trends
+- Impact of discounts on average order value
+- Revenue distribution by age group
+- Product category performance
+- Gender-based comparison
+
+---
+
+## 📈 Key Metrics
+
+- Total Net Revenue
+- Average Order Value (AOV)
+- Discount Usage Rate
+- Revenue by Age Group
+- Gender × Age analysis
+
+---
+
+## 🔍 Key Insights
+
+- Revenue from male and female customers is nearly equal
+- Average order value differences are minimal
+- Discount usage is similar (~56%)
+- The most profitable segment is customers aged **25–45**
+- Gender is not a decisive factor for revenue
+
+---
+
+## 💼 Business Conclusion
+
+Customer gender is not a key profitability driver.
+
+The most valuable segment is customers aged **25–45**, who consistently generate the highest revenue.
+
+---
+
+## 🚀 Recommendations
+
+Marketing strategies should focus on **age segments rather than gender**.
+
+Primary targeting should be customers aged **25–45**, as they represent the most profitable group.
+
+---
+
+## 📁 Repository Structure
+
+ecommerce-customer-revenue-analysis/
+│
+├── screenshots/
+│   ├── dashboard_overview.png
+│   └── customer_segment_analysis.png
+│
+├── SQLqueries.sql/
+│   ├── 1.pdf
+│   ├── 2.pdf
+│   ├── 3.pdf
+│   ├── 4.pdf
+│   ├── 5.pdf
+│   ├── sql_task_1_users_brasil_2023.csv
+│   ├── sql_task_2_categories_count.csv
+│   ├── sql_task_3_shipped_orders.csv
+│   ├── sql_task_4_top10_orders.csv
+│   └── sql_task_5_users_by_country.csv
+│
+├── queries.sql
+├── project1_df.csv
+├── age_regression.py
+├── tableau_public_link.txt
+└── README.md
+
+---
+## Dashboard Preview
+
+This dashboard highlights key business metrics such as revenue trends, customer segmentation and traffic sources.
+
+### Revenue Overview
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+### Customer Segment Analysis
+![Customer Segment Analysis](screenshots/customer_segment_analysis.png)
+
+---
+## 👤 Author
+
+Larysa Marushchak  
+Data Analytics & Engineering Student  
+Deutsche Tech Akademie (DTA) 2026
+
+---
+
+## 🇺🇦 Опис проєкту
 
 Цей проєкт присвячений аналізу поведінки клієнтів інтернет-магазину та оцінці факторів, що впливають на дохід компанії.
 
